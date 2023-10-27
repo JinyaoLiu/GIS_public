@@ -12,16 +12,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 In fact, I'm not sure where to start here, just have a try.
 
-```{r cars}
-summary(cars)
+## 4.6 RMarkdown
+
+### 4.6.1 HTML
+
+```{r}
+library(terra)
+library(here)
+jan<-terra::rast(here("wc2.1_5m_tavg", "wc2.1_5m_tavg_01.tif"))
+# have a look at the raster layer jan
+plot(jan)
 ```
 
-## Including Plots
+## By the way
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The Visual is much easier to see compared with Source, both in RStudio and Jupyter notebook, I love it!!!
