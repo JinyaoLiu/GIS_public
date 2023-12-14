@@ -19,3 +19,4 @@ joined_data <- shape %>%
             useful_data,
             by = c("country" = "country"))
 
+#aba
